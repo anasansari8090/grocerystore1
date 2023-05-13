@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,400&display=swap');
+
+:root
+{
+	--red: red;
+	--blue: blue;
+	--green: green;
+	--black:#130f40;
+	--light-color:#666;
+	--box-shadow:0 .6rem 1.4rem rgba(0,0,0,.1);
+	--border: .2rem solid rgba(0,0,0.1);
+	--outline: .1rem solid rgba(0,0,0.1);
+}
+
+*
+{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all .2s linear;    /*Use for all icons blinking*/
+}
+
+html
+{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 7rem;
+}
+
+body
+{
+	background: #eee;
+}
+
+
+
+/*1st css code for home page*/
+
+section
+{
+	padding: 2rem 9%;
+}
+
+/*2nd css code for home page (For heading tag )*/
+
+.heading
+{
+	text-align: center;
+	padding: 2rem 0;
+	padding-bottom: 3rem;
+	font-size: 3.6rem;
+	color: var(--black);
+}
+
+.heading span
+{
+	background: var(--green);
+	color: #eee;
+	display: inline-block;
+	padding: .5rem 2.9rem;
+	clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);    /* for feature,product,categories,Review ,Blogs etc-tag(background)*/
+}
+
+/*2nd css code for home page (For heading tag )*/
+
+
+/* For All button */
+.btn
+{
+	border: .2px solid var(--black);
+	margin-top: 1rem;
+	display: inline-block;
+	padding: .8rem 3rem;
+	font-size: 1.8rem;
+	border-radius: .5rem;
+	color: var(--black);
+	cursor: pointer;
+	background: #eee;
+
+}
+
+.btn:hover
+{
+	background: var(--green);
+	color: #fff;
+}
+
+/* For All button */
+
+
+.header
+{
+	border: 0px solid;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1500;  /*isse header sabse top layer per ho jayega*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 9%;
+	background: #fff;
+	box-shadow: var(--box-shadow);
+}
+
+.header .logo
+{
+	font-size: 2.6rem;
+	font-weight: bolder;
+	color: var(--green);
+}  
+
+.header .logo i
+{
+	color: var(--red);
+}
+
+.header .navbar a
+{
+	font-size: 1.7rem;
+	margin: 0 1rem;
+	color: var(--black);
+}
+
+.header .navbar a:hover
+{
+	color: var(--blue);
+}
+
+.header .icons div
+{
+	border: 1px solid;
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 4.5rem;
+	border-radius: .6rem;
+	background: #eee;
+	color: var(--black);
+	font-size: 2rem;
+	margin-right: .3rem;
+	text-align: center;
+}
+
+.header .icons div:hover
+{
+	background: var(--green);
+	color: white;
+}
+
+#menu-btn
+{
+	display: none;    /*Hide Menu button*/
+}
+
+.header .navbar.active
+{
+	right: 2rem;
+	transition: .4s linear;
+}
+
+.header .search-form
+{
+	border: 0px solid;
+	position: absolute;
+	top: 110%;
+	right: -120%;
+	width: 50rem;
+	height: 5.1rem;
+	background: #fff;
+	border-radius: .5rem;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	box-shadow: var(--box-shadow);
+}
+
+.header .search-form.active
+{
+	right: 2rem;
+	transition: .4s linear;
+}
+
+.header .search-form input
+{
+	height: 100%;
+	width: 100%;
+	text-transform: none;
+	font-size: 1.7rem;
+	color: var(--black);
+	padding: 0 1.4rem;
+}
+
+.header .search-form lable
+{
+	font-size: 2.2rem;
+	padding-right: 1.4rem;
+	color: var(--black);
+	cursor: pointer;
+}
+
+.header .search-form lable:hover
+{
+	color: var(--blue);
+}
+
+.header .shopping-cart
+{
+	border: 0px solid;
+	position: absolute;
+	top: 111%;
+	right: -120%;
+	padding: 1rem;
+	border-radius: .5rem;
+	box-shadow: var(--box-shadow);
+	width: 36rem;
+	background: #fff;
+}
+
+
+.header .shopping-cart.active
+{
+	right: 2rem;
+	transition: .4s linear;
+}
+
+.header .shopping-cart .box
+{
+	border: 0px solid blue;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+	margin: 1rem 0;
+}
+
+
+.header .shopping-cart .box img
+{
+	height: 10rem;
+}
+
+
+.header .shopping-cart .box .fa-trash
+{
+	font-size: 2rem;
+	position: absolute;
+	top: 50%;
+	right: 2rem;
+	cursor: pointer;
+	color: var(--light-color);
+	transform: translate(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover
+{
+	color: var(--green);
+}
+
+
+.header .shopping-cart .box .content h3
+{
+	color: var(--black);
+	font-size: 1.6rem;
+	padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span
+{
+	color: var(--black);
+	font-size: 1.5rem;
+}
+
+.header .shopping-cart .box .content .quantity
+{
+	padding-left: 1rem;
+}
+
+.header .shopping-cart .total
+{
+	font-size: 2.6rem;
+	padding: 1rem 0;
+	text-align: center;
+	color: var(--black);
+}
+
+
+.header .shopping-cart .btn
+{
+	display: block;
+	text-align: center;
+	margin: 1rem;
+}
+
+
+
+.header .login-form
+{
+	border: 0px solid;
+	position: absolute;
+	top: 111%;
+	right: -105%;
+	padding: 2.1rem;
+	border-radius: .5rem;
+	box-shadow: var(--box-shadow);
+	width: 36rem;
+	background: #fff;
+	text-align: center;
+	width: 33rem;
+}
+
+.header .login-form.active
+{
+	right: 2rem;
+	transition: .4s linear;
+}
+
+
+.header .login-form h3
+{
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+.header .login-form .box
+{
+	border: 0px solid;
+	margin: .8rem 0;
+	background: #eee;
+	border-radius: .5rem;
+	padding: 1.1;
+	font-size: 1.7rem;
+	color: var(--black);
+	text-transform: capitalize;
+	width: 101%;
+}
+
+.header .login-form p
+{
+	font-size: 1.3rem;
+	padding: .4rem 0;
+	color: var(--black);
+}
+
+.header .login-form p a
+{
+	color: var(--blue);
+	text-decoration: underline;
+}
+
+
+/*1st code for home page*/
+
+.home
+{
+	border: 0px solid;
+	display: flex;
+	justify-content: center;
+	background: url(../image/banner-img.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 18rem;
+	padding-bottom: 11rem;
+
+}
+
+
+.home .content
+{
+	border: 0px solid;
+	text-align: center;
+	width: 59rem;
+}
+
+.home .content h3
+{
+	color: var(--black);
+	font-size: 3rem;
+	z-index: 1300;
+}
+
+.home .content h3 span
+{
+	color: var(--green);
+	z-index: 1300;
+}
+
+.home .content p
+{
+	color: var(--green);
+	font-size: 1.8rem;
+	padding: 1rem 0;
+	line-height: 1.7;
+	z-index: 1300;
+}
+
+.home .content p span
+{
+	color: #fff;
+	box-shadow: var(--box-shadow);
+	clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);   /* for Anas Ansari-tag(background)*/
+	background: var(--green);
+	padding: .5rem 1.8rem;
+	z-index: 1300;
+}
+
+/*1st code for home page*/
+
+
+
+
+/*For Features section*/
+
+.features .box-container
+{
+	border: 0px solid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+	gap: .9rem;
+}
+
+.features .box-container .box
+{
+	border: 0px solid;
+	padding: 2.9rem 1.9rem;
+	background: #fff;
+	outline: var(--outline);
+	outline-offset: -.9rem;
+	border-radius: .5rem;
+	text-align: center;
+	box-shadow: var(--box-shadow);
+
+}
+
+.features .box-container .box:hover
+{
+	box-shadow: 1.9px 1.9px 1.9px 1.9px var(--green);
+}
+
+.features .box-container .box img
+{
+	margin: 1rem 0;
+	height: 16rem;
+}
+
+
+.features .box-container .box h3
+{
+	font-size: 3rem;
+	padding: 2rem 0;
+	color: var(--black);
+}
+
+.features .box-container .box p
+{
+	font-size: 1.4rem;
+	padding: 1rem 0;
+	line-height: 1.7;
+	color: var(--light-color);
+}
+
+/*For Features section*/
+
+
+
+
+
+/*For Our-Product section*/
+
+.products .product-slider
+{
+	border: 0px solid;
+	padding: 1rem;
+}
+
+.products .product-slider:first-child               /*use child element*/
+{
+	margin-bottom: 2rem;
+}
+
+.products .product-slider .box
+{
+	border: 0px solidbac;
+	background: #fff;
+	border-radius: .5rem;
+	text-align: center;
+	padding: 2.9rem 1.9rem;
+	outline-offset: -1rem;
+	outline: var(--outline);
+	box-shadow: var(--box-shadow);
+	transition: .2s linear;
+}
+
+.products .product-slider .box:hover
+{
+	box-shadow: 1.9px 1.9px 1.9px 1.9px var(--green);
+}
+
+.products .product-slider .box img
+{
+	height: 19rem;
+}
+
+.products .product-slider .box h1
+{
+	font-size: 2.4rem;
+	color: var(--black);
+}
+
+.products .product-slider .box .price
+{
+	font-size: 2rem;
+	color: var(--light-color);
+	padding: .6rem 0;
+}
+
+.products .product-slider .box .stars i
+{
+	font-size: 1.9rem;
+	color: yellow;
+	padding: .5rem 0;
+}
+
+/*For Our-Product section*/
+
+
+
+
+
+/*for Our-Categories section*/
+
+.categories .box-container
+{
+	border: 0px solid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: .9rem;
+}
+
+
+.categories .box-container .box
+{
+	padding: 2.9rem 0;
+	border: 0px solid;
+	background: #fff;
+	outline: var(--outline);
+	outline-offset: -.9rem;
+	border-radius: .5rem;
+	text-align: center;
+	box-shadow: var(--box-shadow);
+
+}
+
+.categories .box-container .box:hover
+{
+	box-shadow: 1.9px 1.9px 1.9px 1.9px var(--green);
+}
+
+.categories .box-container .box img
+{
+	margin: 1rem 0;
+	height: 16rem;
+}
+
+
+.categories .box-container .box h3
+{
+	font-size: 3rem;
+	padding: 2rem 0;
+	color: var(--black);
+}
+
+.categories .box-container .box p
+{
+	font-size: 1.4rem;
+	padding: 1rem 0;
+	line-height: 1.7;
+	color: var(--light-color);
+}
+
+
+/*for Our-Categories section*/
+
+
+
+
+
+
+
+/*For Customer-Review section*/
+
+
+.review .review-slider
+{
+	border: 0px solid;
+	padding: 1rem;
+}
+
+.review .review-slider .box
+{
+	border: 0px solidbac;
+	background: #fff;
+	border-radius: .5rem;
+	text-align: center;
+	padding: 2.9rem 1.9rem;
+	outline-offset: -1rem;
+	outline: var(--outline);
+	box-shadow: var(--box-shadow);
+	transition: .2s linear;
+}
+
+.review .review-slider .box:hover
+{
+	box-shadow: 1.9px 1.9px 1.9px 1.9px var(--green);
+}
+
+.review .review-slider .box img
+{
+	height: 13rem;
+	width: 13rem;
+	border-radius: 50%;     /*isse img. circle me aa jayegi*/
+}
+
+.review .review-slider .box p
+{
+	font-size: 1.2rem;
+	color: var(--light-color);
+	line-height: 1.7;
+	padding: 1rem 0;
+}
+
+.review .review-slider .box h3
+{
+	font-size: 2.5rem;
+	color: var(--black);
+	padding bottom: .6rem;
+}
+
+.review .review-slider .stars i
+{
+	font-size: 1.9rem;
+	color: yellow;
+	padding: .5rem 0;
+}
+
+/*For Customer-Review section*/
+
+
+
+
+/*For Our Blogs section*/
+
+.blogs .box-container      /*for vegetable container in our-blogs*/ 
+{
+	border: 0px solid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: .9rem;
+}
+
+.blogs .box-container .box    /*for vegetable boxes in our-blogs*/
+{
+	overflow: hidden;
+	border-radius: .5rem;
+	box-shadow: var(--box-shadow);
+	background: #fff;
+}
+
+.blogs .box-container .box img
+{
+	height: 24.9rem;
+	width: 101%;
+	object-fit: cover;
+}
+
+.blogs .box-container .box .content
+{
+	border: 0px solid;         /*Blogs ki img. ke just niche ke boxes ke liye jisme User-icon, btn ,aur jo likha hi*/
+	padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons    /*for icons box in our-blogs*/
+{
+	border: 0px solid;
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+	padding-bottom: 1.6rem;
+	margin-bottom: 1rem;   
+	border-bottom: var(--border);   
+}
+
+.blogs .box-container .box .content .icons a
+{
+	color: var(--light-color);
+	font-size: 1.6rem;
+}
+
+.blogs .box-container .box .content .icons a:hover
+{
+	color: var(--blue);
+}
+
+.blogs .box-container .box .content .icons a i
+{
+	color: green;
+	padding: 1.6rem;
+}
+
+.blogs .box-container .box .content h3
+{
+	line-height: 1.7;
+	color: var(--black);
+	font-size: 2.1rem;
+	padding: .5rem 0;
+}
+
+.blogs .box-container .box .content p
+{
+	line-height: 1.7;
+	color: var(--light-color);
+	font-size: 1.4rem;
+	padding: .5rem 0;
+}
+
+/*For Our Blogs section*/
+
+
+
+
+/*For footer section(last section)*/
+
+.footer
+{
+	background: #fff;
+}
+
+.footer .box-container
+{
+	border: 0px solid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: .9rem;
+}
+
+.footer .box-container .box h3
+{
+	font-size: 2.6rem;
+	color: var(--green);
+	padding: .9rem 0;
+}
+
+.footer .box-container .box h3 i
+{
+	color: var(--red);
+}
+
+.footer .box-container .box .links
+{
+	display: block;
+	font-size: 1.7rem;
+	color: var(--light-color);
+	padding: 1rem 0;
+}
+
+.footer .box-container .box .links i
+{
+	color: var(--blue);
+	padding-right: .5rem;     /*isse phone no.,home ,features,....etc ke text ki position .5rem shift hogi*/
+}
+
+.footer .box-container .box .links:hover i
+{
+	padding-right: 2rem;    /*isse phone no.,home ,features,....etc ke text ki position .5rem se 2rem shift hogi jisse text left right move karega*/
+}
+
+.footer .box-container .box .share
+{
+	padding-top: 5rem;
+}
+
+.footer .box-container .box .share a
+{
+	border: 0px solid;
+	height: 4rem;
+	width: 4rem;
+	line-height: 4rem;
+	border-radius: .5rem;
+	font-size: 3rem;
+	color: var(--black);
+	margin-left: .2rem;
+	background: #eee;
+	text-align: center;
+}
+
+.footer .box-container .box .share a:hover
+{
+	background: var(--green);
+	color: #fff;
+}
+
+.footer .box-container .box .email
+{
+	width: 101%;
+	margin: .8rem 0;
+	padding: 1rem;
+	border-radius: .5rem;
+	background: #eee;
+	font-size: 1.5rem;
+	color: var(--black);
+	text-transform: none;
+}
+
+.footer .box-container .box .payment-img
+{
+	margin-top: 2rem;
+	height: 2.9rem;
+}
+
+.footer .box-container .box p
+{
+	line-height: 1.7;
+	font-size: 1.4rem;
+	color: var(--blue);
+	padding: 1rem;
+}
+
+.footer .credit
+{
+	text-align: center;
+	margin-top: 1.9rem;    /*upper gap*/
+	padding: 1rem;
+	font-size: 2.1rem;
+	color: var(--black);
+	border-top: var(--border);   /*for border*/
+}
+
+.footer .credit span
+{
+	color: #fff;
+	box-shadow: var(--box-shadow);
+	clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);   /* for Anas Ansari-tag(background)*/
+	background: var(--green);
+	padding: .5rem 1.7rem;
+}
+
+/*For footer section(last section)*/
+
+
+
+
+
+
+/* media queries */
+
+@media(max-width: 991px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+	.header
+	{
+		padding: 2rem;
+	}
+	section
+	{
+		padding: 2rem 9%;
+	}
+}
+
+@media(max-width: 769px)
+{
+	#menu-btn
+	{
+		display: inline-block;
+	}
+
+	.header .search-form             /* Consuming(cover) the area of search bar */
+	{
+		width: 91%;
+	}
+
+	.header .navbar  /* for menu bar  for mobile*/
+	{
+		position: absolute;
+		top: 109%;
+		right: -115%;
+		width: 31rem;
+		box-shadow: var(--box-shadow);
+		border-radius: .5rem;
+		background: #fff;
+	}
+
+
+	.header .navbar a      /* create or active menu-bar button for mobile phone  */
+	{
+		font-size: 2rem;
+		margin: 2rem 2.4rem;
+		display: block;
+	}
+}
+
+@media(max-width: 450px)     /*this code for small screen*/
+{
+	html
+	{
+		font-size: 50%;
+	}
+	.heading
+	{
+		font-size: 2.4rem;
+	}
+	.footer
+	{
+		text-align: center;
+	}
+}

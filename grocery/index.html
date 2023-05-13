@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grocery Store By Anas</title>
+
+<!-- code for wbesite logo-->
+<link rel="icon" type="image/icon" href="image/favicon.png">
+<!-- code for wbesite logo-->
+
+
+<!-- code for font Awesome cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- code for font Awesome cdn-->
+
+<!-- code for linking css file-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- code for linking css file-->
+
+
+<!--Use Swiper from CDN code for our-products slider-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<!--Use Swiper from CDN code for our-products slider-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<!-- Now link js file-->
+<!-- Header section-->
+<header class="header">
+	<a href="#" class="logo"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Grocery
+	</a>
+
+<nav class="navbar">
+	<!--for taskbar-->
+	<a href="#home">home</a>
+	<a href="#products">products</a>
+	<a href="#features">features</a>
+	<a href="#categories">categories</a>
+	<a href="#review">review</a>
+	<a href="#blogs">blogs</a>
+</nav>
+
+<div class="icons">
+	<div class="fa fa-bars" id="menu-btn"></div>
+	<div class="fa fa-search" id="search-btn"></div>
+	<div class="fa fa-shopping-cart" id="cart-btn"></div>
+	<div class="fa fa-user" id="login-btn"></div>
+</div>
+
+
+<!-- create forms-->
+<form class="search-form">
+	<input type="search" id="search-box" placeholder="Searcs Here.....">
+	<lable for="search-box" class="fa fa-search"></lable>
+</form>
+
+
+<div class="shopping-cart">
+	<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="image/cart-img-1.png">
+		<div class="content">
+			<h3>Watermelon</h3>
+			<span class="price">$2.99</span>
+			<span class="quantity">Qty : 1</span>
+		</div>
+	</div>
+
+	
+	<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="image/cart-img-2.png">
+		<div class="content">
+			<h3>Onion</h3>
+			<span class="price">$1.99</span>
+			<span class="quantity">Qty : 2</span>
+		</div>
+	</div>
+	<div class="box">
+		<i class="fa fa-trash"></i>
+		<img src="image/cart-img-3.png">
+		<div class="content">
+			<h3>Chicken</h3>
+			<span class="price">$7.99</span>
+			<span class="quantity">Qty : 1</span>
+		</div>
+	</div>	
+<div class="total">total : $17.96/-</div>	
+<a href="#" class="btn">Checkout</a>
+</div>
+
+
+<form action="#" class="login-form">
+	<h3>login now</h3>
+	<input type="email" placeholder="enter your email" class="box">
+	<input type="password" placeholder="your password" class="box">
+	<p>Forget Your Password <a href="#">Click Here</a></p>
+	<p>Don't Have An Account <a href="#">Create Now</a></p>
+
+	<input type="submit" value="Login Now" class="btn">
+	
+</form>
+<!-- create forms-->
+
+</header>
+<!-- Header section-->
+
+
+
+
+<!--1st code of Home page ,it is a section -->
+
+<section class="home" id="home">
+	<div class="content">
+		<h3>Fresh And <span>Organic</span> Product For You</h3>
+		<p>This Website is designed by <span>Anas Ansari</span> and this is for fresh and organic vegetables and fruits.</p>
+
+		<a href="#" class="btn">shop now</a>       <!-- for shop now button-->
+	</div>
+	
+</section>
+<!--1st code of Home page ,it is a section -->
+
+
+<!-- create Our-Feature section-->
+<section class="features" id="features">
+	<h1 class="heading"> our <span>features</span></h1>
+
+	<div class="box-container">
+		<div class="box">      <!-- This for (our features boxes) OR (fres and organic),(free delivery),(easy payments) boxes -->
+			<img src="image/feature-img-1.png">
+			<h3>fres and organic</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+			<a href="#" class="btn">read more</a>          <!--for btn-->
+		</div>
+
+		<div class="box">
+			<img src="image/feature-img-2.png">
+			<h3>free delivery</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+			<a href="#" class="btn">read more</a>          <!--for btn-->
+		</div>
+
+		<div class="box">
+			<img src="image/feature-img-3.png">
+			<h3>easy payments</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+			<a href="#" class="btn">read more</a>          <!--for btn-->
+		</div>
+	</div>
+</section>
+<!-- create Our-Feature section-->
+
+
+
+<!-- code of Our-Product section-->
+
+<section class="products" id="products">
+	<h1 class="heading"> our <span>products</span></h1>    <!--In this span class is already define in features so it  also run for product span class -->
+
+
+<!-- This code for first Slider-->
+
+	<div class="swiper product-slider">    <!-- code for product slider -->
+		<div class="swiper-wrapper">
+
+
+<!-- this is for orange-box -->
+			<div class="swiper-slide box">         <!-- this is for slide of boxes -->
+				<img src="image/product-1.png"></img>
+				<h1>orange</h1>
+				<div class="price"> $11.99/- -14.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star-half"></i>    <!-- this is for Half-stars-rating icon -->
+				</div>
+				<a href="" class="btn">add to cart</a>   <!-- this is for add-to-cart button -->
+			</div>
+<!-- this is for orange-box -->
+
+           
+<!-- this is for Meat-box -->
+
+			<div class="swiper-slide box">
+				<img src="image/product-3.png"></img>
+				<h1>meat</h1>
+				<div class="price"> $19.99/- -22.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star-half"></i>    <!-- this is for Half-stars-rating icon -->
+				</div>
+				<a href="" class="btn">add to cart</a>   <!-- this is for add-to-cart button -->
+			</div>
+<!-- this is for Meat-box -->
+
+            
+<!-- this is for Onion-box -->
+
+			<div class="swiper-slide box">
+				<img src="image/product-2.png"></img>
+				<h1>onion</h1>
+				<div class="price"> $5.99/- -6.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star-half"></i>    <!-- this is for Half-stars-rating icon -->
+				</div>
+				<a href="" class="btn">add to cart</a>   <!-- this is for add-to-cart button -->
+			</div>
+
+<!-- this is Onion-box -->
+
+
+
+<!-- this is for Cabbage-box -->
+
+			<div class="swiper-slide box">
+				<img src="image/product-4.png"></img>
+				<h1>cabbage</h1>
+				<div class="price"> $9.99/- -12.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+				</div>
+				<a href="" class="btn">add to cart</a>   <!-- this is for add-to-cart button -->
+			</div>
+<!-- this is for Cabbage-box -->
+
+
+		</div>
+		
+	</div>
+
+<!-- This code for first Slider-->
+
+
+<!-- This code for Second Slider-->
+
+	<div class="swiper product-slider">    <!-- code for product slider -->
+		<div class="swiper-wrapper">
+
+<!-- this is for  CARROT-box -->
+			<div class="swiper-slide box">     <!-- this is for slide of boxes -->
+				<img src="image/product-7.png"></img>
+				<h1>carrot</h1>
+				<div class="price"> $10.99/- -14.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star-half"></i>    <!-- this is for Half-stars-rating icon -->
+				</div>
+				<a href="" class="btn">add to cart</a>   <!-- this is for add-to-cart button -->
+			</div>
+<!-- this is for  CARROT-box -->
+
+           
+<!-- this is for Lemon-box -->
+
+			<div class="swiper-slide box">
+				<img src="image/product-8.png"></img>
+				<h1>lemon</h1>
+				<div class="price"> $12.99/- -18.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+				</div>
+				<a href="" class="btn">add to cart</a>   <!-- this is for add-to-cart button -->
+			</div>
+<!-- this is for Lemon-box -->
+
+            
+<!-- this is for Avocado-box -->
+
+			<div class="swiper-slide box">
+				<img src="image/product-6.png"></img>
+				<h1>avocado</h1>
+				<div class="price"> $11.99/- -16.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star-half"></i>    <!-- this is for Half-stars-rating icon -->
+				</div>
+				<a href="" class="btn">add to cart</a>   <!-- this is for add-to-cart button -->
+			</div>
+
+<!-- this is Avocado-box -->
+
+
+
+<!-- this is for Potato-box -->
+
+			<div class="swiper-slide box">
+				<img src="image/product-5.png"></img>
+				<h1>potato</h1>
+				<div class="price"> $10.99/- -12.99/-</div>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+				</div>
+				<a href="" class="btn">add to cart</a>   <!-- this is for add-to-cart button -->
+			</div>
+<!-- this is for Potato-box -->
+
+
+		</div>
+		
+	</div>
+<!-- This code for Second Slider-->
+
+</section>
+<!-- code Our-Product section-->
+
+
+
+
+<!-- Code Our-Categories section-->
+
+<section class="categories" id="categories">
+	<h1 class="heading"> our <span>categories</span></h1>
+
+	<div class="box-container">
+		<div class="box">
+			<img src="image/cat-4.png">
+			<h3>fresh meat</h3>
+			<p>Upto 46% off</p>
+			<a href="#" class="btn">shop now</a>             <!--for shop-now btn-->
+		</div>
+
+ 
+ 		<div class="box">
+			<img src="image/cat-3.png">
+			<h3>dairy products</h3>
+			<p>Upto 45% off</p>
+			<a href="#" class="btn">shop now</a>             <!--for shop-now btn-->
+		</div>
+
+
+		<div class="box">
+			<img src="image/cat-2.png">
+			<h3>fresh fruits</h3>
+			<p>Upto 50% off</p>
+			<a href="#" class="btn">shop now</a>             <!--for shop-now btn-->
+		</div>
+
+
+		<div class="box">
+			<img src="image/cat-1.png">
+			<h3>vegetables</h3>
+			<p>Upto 40% off</p>
+			<a href="#" class="btn">shop now</a>             <!--for shop-now btn-->
+		</div>
+
+	</div>
+</section>
+
+<!-- Code Our-Categories section-->
+
+
+
+
+
+<!-- code Customer-Review section-->
+
+
+<section class="review" id="review">
+	<h1 class="heading"> customer's <span>review</span></h1>    <!--In this span class is already define in features so it  also run for product span class -->
+
+
+<!-- This code for Slider-->
+
+	<div class="swiper review-slider">    <!-- code for product slider -->
+		<div class="swiper-wrapper">
+
+
+<!-- this is for pic-4 box -->
+			<div class="swiper-slide box">         <!-- this is for slide of boxes -->
+				<img src="image/pic-4.png"></img>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h3>arun kumar yadav</h3>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+				</div>
+			</div>
+<!-- this is for pic-4 box -->
+
+           
+<!-- this is for pic-3 box -->
+
+			<div class="swiper-slide box">
+				<img src="image/pic-3.png"></img>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h3>arun sharma</h3>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star-half"></i>    <!-- this is for Half-stars-rating icon -->
+				</div>
+			</div>
+<!-- this is for pic-3 box -->
+
+            
+<!-- this is for pic-2 box -->
+
+			<div class="swiper-slide box">
+				<img src="image/pic-2.png"></img>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h3>aman rai</h3>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star-half"></i>    <!-- this is for Half-stars-rating icon -->
+				</div>
+			</div>
+
+<!-- this is pic-2 box -->
+
+
+
+<!-- this is for pic-1 box -->
+
+			<div class="swiper-slide box">
+				<img src="image/pic-1.png"></img>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<h3>amol singh</h3>
+				<div class="stars">
+					<i class="fa fa-star"></i>         <!-- this is for stars-rating icon -->
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+					<i class="fa fa-star"></i> 
+				</div>
+			</div>
+<!-- this is for pic-1 box -->
+
+
+		</div>
+		
+	</div>
+
+<!-- This code for Slider-->
+
+<!-- code Customer-Review section-->
+
+
+
+
+
+<!-- code Our-Blogs section-->
+
+<section class="blogs" id="blogs">
+	<h1 class="heading"> our <span>blogs</span></h1>    <!--In this span class is already define in features so it  also run for product span class -->
+	<div class="box-container">
+		<div class="box">
+		<img src="image/blog-1.jpg">
+		<div class="content">
+			<div class="icons">
+				<a href="#"><i class="fa fa-user"></i> by user </a>           <!--This is for user-icon in blog-->
+				<a href="#"><i class="fa fa-calendar"></i> 10 oct,2022 </a>           <!--This is for Calendar-icon in blog-->
+			</div>
+			<h3>fresh and organic vegetables and fruits</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<a href="#" class="btn">read more</a>
+		</div>	
+		</div>
+
+		<div class="box">
+		<img src="image/blog-2.jpg">
+		<div class="content">
+			<div class="icons">
+				<a href="#"><i class="fa fa-user"></i> by user </a>           <!--This is for user-icon in blog-->
+				<a href="#"><i class="fa fa-calendar"></i> 10 oct,2022 </a>           <!--This is for Calendar-icon in blog-->
+			</div>
+			<h3>fresh and organic vegetables and fruits</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<a href="#" class="btn">read more</a>
+		</div>	
+		</div>
+
+
+		<div class="box">
+		<img src="image/blog-3.jpg">
+		<div class="content">
+			<div class="icons">
+				<a href="#"><i class="fa fa-user"></i> by user </a>           <!--This is for user-icon in blog-->
+				<a href="#"><i class="fa fa-calendar"></i> 10 oct,2022 </a>           <!--This is for Calendar-icon in blog-->
+			</div>
+			<h3>fresh and organic vegetables and fruits</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			<a href="#" class="btn">read more</a>
+		</div>	
+		</div>
+	</div>
+</section>
+
+<!-- code Our-Blogs section-->
+
+
+
+
+<!-- code Footer section-->
+
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3> Groco <i class="fa fa-shopping-basket"></i></h3>
+			<p>Sharing with</p>
+			<div class="share">
+				<a href="#" class="fa fa-facebook"></a>            <!--for facebook icon-->
+				<a href="#" class="fa fa-instagram"></a>            <!--for insta icon-->
+				<a href="#" class="fa fa-twitter"></a>            <!--for twitter icon-->
+				<a href="#" class="fa fa-linkedin"></a>            <!--for linkedin icon-->
+				<a href="#" class="fa fa-whatsapp"></a>             <!--for whatsapp icon-->
+			</div>
+		</div>
+
+
+		<div class="box">
+			<h3> Contact Info </h3>
+			<a href="#" class="links"><i class="fa fa-phone"></i> +91 99446898 </a>    <!--for phone icon-->
+			<a href="#" class="links"><i class="fa fa-phone"></i> +91 99476408 </a>    <!--for phone icon-->
+			<a href="#" class="links"><i class="fa fa-envelope"></i> anas@gmail.com </a>    <!--for Email icon-->
+			<a href="#" class="links"><i class="fa fa-map-marker"></i> Ghaziabad,India </a> <!--for map(location)icon-->
+			
+		</div>
+
+
+		<div class="box">
+			<h3> Quick Links </h3>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i> Home </a>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i> Features </a>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i> Products </a>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i> Review </a>
+			<a href="#" class="links"><i class="fa fa-arrow-right"></i> Blogs </a>    
+			
+		</div>
+
+		<div class="box">
+			<h3> Newsletter </h3>
+			<p>Latest Updates</p>
+			<input type="email" placeholder="Your Email-Id" class="email">
+			<input type="submit" value="Submit" class="btn">
+			<img src="image/payment.png" class="payment-img">    
+			
+		</div>
+		
+	</div>
+
+
+<div class="credit">-:- Credit by <span>Anas Ansari</span> | All rights reserved -:-</div>	
+
+
+</section>
+
+<!-- code Footer section-->
+
+
+<!--Use Swiper from CDN code for our-products slide-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!--Use Swiper from CDN code for our-products slide-->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
